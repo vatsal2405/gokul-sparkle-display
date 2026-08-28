@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var LS_P = "gokul.products.v1";
+  var LS_P = "gokul.products.v2";
   var LS_R = "gokul.reviews.v1";
   var CATS = ["All", "TVs", "Refrigerators", "Coolers", "Washing Machines", "Accessories"];
   var IMG = "https://images.unsplash.com/";
