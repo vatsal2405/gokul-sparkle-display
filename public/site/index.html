@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gokul Electronics — Electronics &amp; Appliances Store in Dhanori, Pune</title>
+<meta name="description" content="Gokul Electronics, Dhanori, Pune — TVs, refrigerators, air coolers, washing machines and home appliances at discounted prices. Open daily till 9 PM. Call 077750 11155." />
+<meta property="og:title" content="Gokul Electronics — Dhanori, Pune" />
+<meta property="og:description" content="Your trusted electronics &amp; appliances store in Dhanori, Pune. Big discounts on TVs, fridges, coolers and washing machines." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+<div id="cursor" class="cursor" aria-hidden="true"><span class="ch ch-v"></span><span class="ch ch-h"></span><span class="ch-ring"></span></div>
+
+<a class="skip" href="#products">Skip to products</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">GE</span>
+      <span class="brand-txt"><strong>Gokul Electronics</strong><small>Dhanori, Pune</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#manage">Manage</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-sm btn-primary" href="tel:07775011155">Call Now</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy reveal">
+        <p class="status" id="status"><span class="dot"></span><span id="statusText">Checking hours…</span></p>
+        <h1>Your Trusted <span class="grad">Electronics &amp; Appliances</span> Store in Dhanori</h1>
+        <p class="lede">TVs, refrigerators, air coolers, washing machines and everyday appliances — genuine brands, honest prices and friendly local service. Open daily, closes 9:00 PM.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="#products">Shop Now</a>
+          <a class="btn btn-ghost btn-lg" href="tel:07775011155">Call Us · 077750 11155</a>
+        </div>
+        <ul class="stats" id="stats">
+          <li><strong data-count="12">0</strong><span>Years in Dhanori</span></li>
+          <li><strong data-count="4800" data-suffix="+">0</strong><span>Happy customers</span></li>
+          <li><strong data-count="50" data-suffix="%">0</strong><span>Up to off</span></li>
+        </ul>
+      </div>
+      <div class="hero-art reveal">
+        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=70" alt="Modern home electronics on display" loading="lazy" />
+        <div class="hero-chip">Free delivery in Dhanori</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <h2>Products &amp; Offers</h2>
+        <p>Search or filter to find exactly what you need. Prices shown are store offer prices.</p>
+      </header>
+      <div class="tools reveal">
+        <label class="search">
+          <span class="sr">Search products</span>
+          <input id="search" type="search" placeholder="Search TVs, fridge, cooler…" autocomplete="off" />
+        </label>
+        <div class="chips" id="filters" role="group" aria-label="Category filters"></div>
+      </div>
+      <div class="grid" id="productGrid"></div>
+      <p class="empty" id="empty" hidden>No products match your search. Try another keyword.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="reviews">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <h2>Customer Reviews</h2>
+        <p>What our Dhanori neighbours say about us.</p>
+      </header>
+      <div class="review-layout">
+        <div class="review-list" id="reviewList"></div>
+        <form class="card form reveal" id="reviewForm" novalidate>
+          <h3>Write a review</h3>
+          <label>Your name<input id="rName" required maxlength="40" placeholder="e.g. Ankita S." /></label>
+          <fieldset class="stars-input">
+            <legend>Rating</legend>
+            <div id="starPick" class="star-pick"></div>
+          </fieldset>
+          <label>Message<textarea id="rMsg" rows="4" required maxlength="400" placeholder="Tell us about your experience"></textarea></label>
+          <button class="btn btn-primary" type="submit">Submit review</button>
+          <p class="hint" id="rHint" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="manage">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <h2>Owner Panel · Manage Products</h2>
+        <p>Add, edit or remove products. Changes are saved in this browser.</p>
+      </header>
+      <div class="manage-layout">
+        <form class="card form reveal" id="prodForm" novalidate>
+          <h3 id="formTitle">Add product</h3>
+          <label>Name<input id="pName" required placeholder="Samsung 43&quot; 4K Smart TV" /></label>
+          <label>Category
+            <select id="pCat">
+              <option>TVs</option><option>Refrigerators</option><option>Coolers</option>
+              <option>Washing Machines</option><option>Accessories</option>
+            </select>
+          </label>
+          <label>Image URL<input id="pImg" placeholder="https://images.unsplash.com/…" /></label>
+          <div class="two">
+            <label>Original price ₹<input id="pMrp" type="number" min="0" required /></label>
+            <label>Offer price ₹<input id="pPrice" type="number" min="0" required /></label>
+          </div>
+          <label>Description<textarea id="pDesc" rows="3" placeholder="Short description"></textarea></label>
+          <div class="cta-row">
+            <button class="btn btn-primary" type="submit" id="saveBtn">Save product</button>
+            <button class="btn btn-ghost" type="button" id="cancelEdit" hidden>Cancel</button>
+            <button class="btn btn-ghost" type="button" id="resetAll">Reset to default</button>
+          </div>
+          <p class="hint" id="pHint" role="status"></p>
+        </form>
+        <div class="manage-list" id="manageList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <h2>Visit the store</h2>
+        <p class="lede">Gokul Residency, Opp. Canara Bank, Madhav Nagar, Dhanori, Pune, Maharashtra 411015</p>
+        <ul class="info">
+          <li><strong>Phone</strong><a href="tel:07775011155">077750 11155</a></li>
+          <li><strong>Hours</strong><span>Open daily · closes 9:00 PM</span></li>
+          <li><strong>Area</strong><span>Dhanori, Vishrantwadi, Lohegaon &amp; nearby</span></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:07775011155">Call the store</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gokul+Residency+Opp+Canara+Bank+Madhav+Nagar+Dhanori+Pune+411015">Open in Maps</a>
+        </div>
+      </div>
+      <div class="map card reveal">
+        <iframe title="Map to Gokul Electronics, Dhanori" loading="lazy" src="https://maps.google.com/maps?q=Madhav%20Nagar%20Dhanori%20Pune%20411015&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <div class="wrap band-in">
+      <h2>Need help choosing an appliance?</h2>
+      <p>Tell us your budget and room size — we’ll recommend the right model.</p>
+      <a class="btn btn-light btn-lg" href="tel:07775011155">Talk to us · 077750 11155</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <span class="brand-mark">GE</span>
+      <p>Gokul Electronics — electronics &amp; home appliances in Dhanori, Pune since 2014.</p>
+    </div>
+    <nav aria-label="Quick links">
+      <h3>Quick links</h3>
+      <a href="#products">Products</a><a href="#reviews">Reviews</a><a href="#manage">Owner panel</a><a href="#contact">Contact</a>
+    </nav>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:07775011155">077750 11155</a>
+      <p>Gokul Residency, Opp. Canara Bank, Madhav Nagar, Dhanori, Pune 411015</p>
+      <p>Open daily · closes 9:00 PM</p>
+    </div>
+  </div>
+  <p class="copy">© <span id="year"></span> Gokul Electronics. All rights reserved.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="./script.js"></script>
+</body>
+</html>
